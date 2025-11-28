@@ -6,7 +6,8 @@ const port = 3000;
 // scan again
 
 
-// trigger scan
+// trigger GitHub Action scan
+
 
 http.createServer((req, res) => {
   const url = req.url;
