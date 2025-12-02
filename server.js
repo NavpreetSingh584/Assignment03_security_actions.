@@ -6,12 +6,12 @@ const port = 3000;
 // scan again
 
 
-// trigger GitHub Action scan
+// trigger Git Hub Action scan
 
 
 http.createServer((req, res) => {
   const url = req.url;
-  //No   input validation on the prpvided url
+  //No input validation on the provided url
   fs.readFile("." + url, (err, data) => {
     if (err) {
       res.writeHead(404);
